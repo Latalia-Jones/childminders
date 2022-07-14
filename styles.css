@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 0;
+  color: #FFFFFF;
+  line-height: 1.3;
+}
+
+#showcase{
+  background-image:url("images/child.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 40px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+#showcase h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+}
+
+#showcase p{
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 20px;
+}
+
+#showcase .button{
+  position:relative;
+  top:-10px;
+  font-size: 20px;
+  }
+
+  .searchBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:  translate(-50%,50%);
+  border-radius: 40px;
+  padding: 10px 20px;
+  display:flex;
+  }
+
+  .searchBox:hover > .searchInput {
+  width: 240px;
+  padding:10px;
+  }
+
+  .searchBox:hover > .searchButton {
+  background: white;
+  color : #2f3640;
+  }
+
+  .searchBox:hover{
+  background: #2f3640;
+  }
+
+  .searchBox:hover > .searchButton:hover {
+  background-color:var(--primary);
+  border:1px solid var(--primary);
+  color:var(--white);
+  }
+
+  .searchButton {
+  color: #FFFFFF;
+  float: right;
+  width: auto;
+  padding:10px 20px;
+  border-radius:40px;
+  background:#72CC50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  border:0;
+  font-style:normal !Important;
+  font-weight:600;
+  text-align:center;
+  border:1px solid var(--white);
+  }
+
+  .searchInput {
+  border:none;
+  background: none;
+  outline:none !important;
+  float:left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  width: 0px;
+  }
+
+  @media screen and (max-width: 1028px) {
+
+  #showcase{
+padding: 40px;
+text-align: center;
+ }
+
+ #showcase p{
+   padding: 40px;
+   line-height: 1.5;
+ }
+}

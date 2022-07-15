@@ -11,6 +11,7 @@ body{
 
 #showcase{
   background-image:url("images/children.jpg");
+  position: relative;
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -24,6 +25,7 @@ body{
 .overlay {
   position: absolute;
   top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.65);
@@ -121,6 +123,5 @@ text-align: center;
 
  #showcase p{
    padding: 40px;
-   line-height: 1.5;
  }
 }
